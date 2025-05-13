@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "eslint": "^9.26.0",
+    "jsdom": "^26.1.0",
+    "mocha": "^11.2.2",
+    "mocha-headless-chrome": "^4.0.0"
+  }
+}
