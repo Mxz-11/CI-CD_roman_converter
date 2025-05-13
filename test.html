@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Roman Converter Tests</title>
-  
-  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.17.2.css">
+  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css">
 </head>
 <body>
-  <h1>Roman Converter Test Cases</h1>
+  <div id="mocha"></div>
 
-  <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
-
-
-  <script src="https://code.jquery.com/qunit/qunit-2.17.2.js"></script>
-
+  <script src="https://unpkg.com/mocha/mocha.js"></script>
+  <script src="https://unpkg.com/chai/chai.js"></script>
+  <script>
+    mocha.setup("bdd");
+    const expect = chai.expect;
+  </script>
 
   <script src="script.js"></script>
   <script src="tests.js"></script>
+
+  <script>
+    mocha.run();
+  </script>
 </body>
 </html>
